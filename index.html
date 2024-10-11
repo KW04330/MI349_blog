@@ -11,57 +11,83 @@
             line-height: 1;
             margin: 0;
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
         }
+
+        .container{
+            width: 100%;
+            max-width: 800px;
+            padding: 0 20px;
+            box-sizing: border-box;
+        }
+
         header, nav, main{
-            margin-bottom: 20px;
+            width: 100%;
+            text-align: center;
         }
+
         nav ul{
             list-style-type: none;
             padding: 0;
         }
+
         nav ul li{
             display: inline;
             margin-right: 10px;
         }
+
+        main{
+            flex-grow: 40px;
+            padding: 20px 0;
+        }
+
         article{
             margin-bottom: 40px;
+            text-align: left;
         }
+
         .blog-image {
             max-width: 100%;
             height: auto;
             width: 600px;
+            margin: 0 auto;
         }
     </style>
 </head>
 
 <body>
-    <header>
-        <h1>Kevin's Blog</h1>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a herf="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main>
-        <article>
-            <img class="blog-image" src="League of Legends.png" alt="Vintage Image">
-            <h2>The Revolution of League of Legends</h2>
-            <p><time datetime="2024-10-11">October 11, 2024</time> by <span class="author">Kevin Wang</span></p>
-            <p>League of Legends (LOL) is up tp now one of the most well-know video games in the 
-                esports world, with its complicated strategic gameplay. It started with Riot Games
-                in 2009 and it has constantly changed through regular updates, the introduction of new 
-                champions, and balancing changes that keep the gameplay fresh and competitve. League of
-                Legend is a game that's remarkable in its versatility, as a game for normal player and a 
-                game for professional esports player alike. With more than 160 champions, each with their 
-                own skills and tactics, players are encouraged to try different roles and strategies, whether 
-                it's in solo queue or high-rank tournaments.
-            </p>
-        </article>
-    </main>
+    <div class="container">
+        <header>
+            <h1>Kevin's Blog</h1>
+        </header>
+    
+        <nav>
+            <ul>
+                <li><a herf="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    
+        <main>
+            <article>
+                <img class="blog-image" src="League of Legends.png" alt="Vintage Image">
+                <h2>The Revolution of League of Legends</h2>
+                <p><time datetime="2024-10-11">October 11, 2024</time> by <span class="author">Kevin Wang</span></p>
+                <p>League of Legends (LOL) is up tp now one of the most well-know video games in the 
+                    esports world, with its complicated strategic gameplay. It started with Riot Games
+                    in 2009 and it has constantly changed through regular updates, the introduction of new 
+                    champions, and balancing changes that keep the gameplay fresh and competitve. League of
+                    Legend is a game that's remarkable in its versatility, as a game for normal player and a 
+                    game for professional esports player alike. With more than 160 champions, each with their 
+                    own skills and tactics, players are encouraged to try different roles and strategies, whether 
+                    it's in solo queue or high-rank tournaments.
+                </p>
+            </article>
+        </main>
+    </div>
 </body>
 </html>
