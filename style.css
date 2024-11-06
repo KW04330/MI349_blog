@@ -50,9 +50,11 @@ main{
     flex-grow: 1;
     padding: 20px 0;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 article{
+    flex-basis: 32%;
     margin-bottom: 40px;
     text-align: left;
 }
